@@ -1,0 +1,95 @@
+/* New CSS file for DESN340 P1 Part 2 */
+
+
+/* TEXT */
+h1 {
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	margin-top: 275px;
+	margin-bottom: 20px;
+}
+
+/* BOXES */
+#cyanbox {
+	background-color: cyan;
+	border-top: solid 21px white ;
+	border-right: solid 21px white;
+	border-bottom: solid 166px white;
+	border-left: solid 21px white;
+	width: 272px;
+	height: 257px;
+	float: left;
+	margin-right: 60px;
+	margin-left: 37px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#magentabox {
+	background-color: magenta;
+	border-top: solid 21px white ;
+	border-right: solid 21px white;
+	border-bottom: solid 166px white;
+	border-left: solid 21px white;
+	width: 272px;
+	height: 257px;
+	float: left;
+	margin-right: 50px;
+	margin-left: 50px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#yellowbox {
+	background-color: yellow;
+	border-top: solid 21px white ;
+	border-right: solid 21px white;
+	border-bottom: solid 166px white;
+	border-left: solid 21px white;
+	width: 272px;
+	height: 257px;
+	float: right;
+	margin-right: 50px;
+	margin-left: 50px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#blackbox {
+	background-color: black;
+	border-top: solid 21px white ;
+	border-right: solid 21px white;
+	border-bottom: solid 166px white;
+	border-left: solid 21px white;
+	width: 272px;
+	height: 257px;
+	float: right;
+	margin-right: 37px;
+	margin-left: 60px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* HEADER IMAGE */
+#cmyk {
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* BUTTONS */
+.button1 {
+  background-color: black;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* BODY */
+body {
+	background-color: darkslategrey;
+}
