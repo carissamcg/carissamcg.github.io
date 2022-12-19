@@ -1,0 +1,1089 @@
+/* Stylesheet for the Ptarmigan website
+
+
+Colors:
+White: fff;
+Black: 161616;
+Golden Yellow: DDA15E;
+Warm Orange BC6C25
+Dark Green 283618
+Medium Green 606C38
+Light Green A3B18A
+
+Main button color #606C38
+Contrast button color #A3B18A
+
+Playfair Display for main titles & subtitles 
+Latos for Navigation & body text
+
+/* Responsive viewport declaration */
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+} 
+/* For future compatibility */
+
+/* Box Model Fix */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Clear Fix */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 31px;
+	font-weight: 400;
+	background-color: #fff;
+}
+
+/* Type Hierarchy */
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	font-weight: 700;
+	color: #BC6C25;
+	margin: 1;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #BC6C25;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	color: #161616;
+	margin: 0;
+}
+
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #161616;
+	margin-bottom: 25px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	color: #161616;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #606C38;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+a:hover {
+	color: #283618;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Header Styles and Rules */
+header {
+	background-color: transparent;
+}
+
+header a {
+	color: #fff;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	width: 100px;
+}
+
+.flexrow {
+	width: 90vw;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.centervert {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spacinggrid {
+	width: 200px;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows: 1fr;
+	column-gap: 10%;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	align-content: space-between;
+	color: black;
+}
+
+#header1 {
+	padding: 0.5rem
+	text-decoration: none;
+}
+
+#header2 {
+	padding: 0.5rem;
+	text-decoration: none;
+}
+
+#header1:hover {
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+#header2:hover {
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+
+/* Hompage Styling */
+/* Homepage Hero */
+
+#hero1 {
+	background-image: url("../images/woodbackground_home.jpg");
+	background-size: cover;
+	height: 100vh;
+	margin-top: -150px;
+}
+
+.card {
+	background-color: #fff;
+	width: 75vw;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: -535px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 80px;
+	overflow: hidden;
+	border: none;
+	border-radius: 0;
+}
+
+.card-chunk h2 {
+	margin: 50px 0;
+}
+
+.card-chunk p {
+	margin-bottom: 50px;
+}
+
+#woodshaving img {
+	width: 250px;
+	margin-left: -75px;
+	padding-top: 30px;
+}
+
+.vl {
+  border-left: 6px solid #DDA15E;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -175px;
+  top: 20%;
+}
+
+a.CTA {
+	background-color: #606C38;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 6px;
+}
+
+a.CTA:hover {
+	background-color: #A3B18A;
+}
+
+/* Homepage Our Work */
+
+#ourworksect {
+	z-index: 1;
+}
+
+#ourwork {
+	margin-top: 150px;
+	margin-bottom: 75px;
+	text-align: center;
+}
+
+#cabinet img {
+	width: 250px;
+	margin-left: 100px;
+}
+
+#furnituretext {
+	text-align: right;
+}
+
+#furniture img {
+	width: 250px;
+	margin-right: 100px;
+}
+
+#featurewall img{
+	width: 250px;
+	margin-left: 100px;
+}
+
+.numbers {
+	font-family: 'Playfair Display', serif;
+	font-size: 100px;
+	font-weight: 700;
+	color: #283618;
+}
+
+#one {
+	margin-top: -10px;
+}
+
+#two {
+	padding-top: 75px;
+}
+
+#treering1 img {
+	margin-top: -1250px;
+	margin-left: -25px;
+	position: absolute;
+	z-index: -2;
+	width: 450px;
+}
+
+#treering2 img {
+	position: absolute;
+	margin-top: -850px;
+	margin-left: 64.25vw;
+	z-index: -2;
+	width: 430px;
+}
+
+.hl {
+  border-top: 6px solid #DDA15E;
+  width: 415px;
+  position: absolute;
+  z-index: 3;
+}
+
+#oneline {
+	margin-top: -740px;
+	margin-left: 385px;
+}
+
+#twoline {
+	margin-top: -365px;
+	margin-left: 440px;
+}
+
+#threeline {
+	margin-top: -25px;
+	margin-left: 385px;
+}
+
+/* Homepage Testimonial */
+
+#testimonial {
+	background-color: #283618;
+	height: 400px;
+	margin-top: 125px;
+}
+
+#quotesect {
+	margin-top: -300px;
+}
+
+.quotes {
+	font-family: 'Playfair Display', serif;
+	font-size: 150px;
+	font-weight: 700;
+	color: #fff;
+	margin-left: 100px;
+}
+
+#quote2 {
+	transform: rotate(180deg);
+	margin-top: 125px;
+}
+
+.content-slider {
+  width: 100%;
+  height: 360px;
+}
+
+.slider {
+  height: 320px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+.mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+.slider .quote p {
+  font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 115px;
+	text-align: left;
+}
+
+.slider .five img {
+	width: 170px;
+}
+
+.slider li.anim1 {
+  animation: cycle 25s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 25s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 25s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 25s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 25s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+/* About Styling */
+/* About Hero */
+
+#hero2 {
+	background-image: url("../images/woodbackground_about.jpg");
+	background-size: cover;
+	height: 100vh;
+	margin-top: -150px;
+}
+
+#woodworker img {
+	transform: scaleX(-1);
+	width: 300px;
+	margin-left: -90px;
+	padding-top: 10px;
+}
+
+/* About Mission/Values */
+#mission {
+	margin-top: 150px;
+}
+
+#mission ul {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #161616;
+	margin-bottom: 25px;
+	list-style-type: disc;
+} 
+
+#stump img {
+	width: 300px;
+	margin-top: 125px;
+	margin-left: 25px;
+}
+
+#treering3 img {
+	position: absolute;
+	margin-top: -400px;
+	margin-left: 64.25vw;
+	z-index: -2;
+	width: 430px;
+	transform: scaleX(-1);
+}
+
+/* About Materials */
+
+#materials {
+	margin-top: -25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#materials h1 {
+	color: #283618;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.gallery h4 {
+	color: #fff;
+	font-size: 18px;
+	z-index: 2;
+	margin-left: -200px;
+	padding-top: 360px;
+}
+
+.gallery li {
+    width: 210.5px; 
+    height: 400px;
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.gallery li img {
+    width: 100%; 
+    height: auto;
+}
+
+/* Contact Styling */
+/* Contact Hero */
+
+#hero3 {
+	background-image: url("../images/woodbackground_contact.jpg");
+	background-size: cover;
+	height: 100vh;
+	margin-top: -150px;
+}
+
+#contact {
+	margin-top: 15px;
+}
+
+#contact h4 span {
+	font-weight: 700;
+}
+
+#sketch img {
+	width: 300px;
+	margin-left: -90px;
+}
+
+/* Footer Styling */ 
+
+footer {
+	background-color: #BC6C25;
+	border-radius: 0px;
+	color: #fff;
+	position: relative;
+	z-index: 3;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#footer1 {
+	margin-top: 125px;
+}
+
+#footer2 {
+	margin-top: -25px;
+}
+
+#footer3 {
+	margin-top: 85px;
+}
+
+#footerlogo {
+	padding-left: 75px;
+}
+
+#footerlogo h4 {
+	color: #fff;
+}
+
+#footerlogo span {
+	font-weight: 700;
+}
+
+#footerlogo img {
+	display: inline-block;
+	width: 70px;
+	padding-bottom: 25px;
+}
+
+#map img {
+	width: 410px;
+	height: auto;
+	margin-left: 64.9vw;
+	overflow: hidden;
+	margin-top: -412px;
+}
+
+#socials {
+	height: 50px;
+	width: 150px;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	padding-left: 0rem;
+}
+
+#socials svg {
+	width: 60%;
+	fill: #fff;
+}
+
+#project h2 {
+	color: #fff;
+}
+
+#project h4 {
+	color: #fff;
+}
+
+.form-control {
+	border-style: none;
+	margin-bottom: 15px;
+}
+
+#credit p {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.footervl {
+  border-left: 6px solid #DDA15E;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  margin-left: -245px;
+  top: 10%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:700px) {
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 38px;
+	font-weight: 700;
+	color: #BC6C25;
+	margin: 1;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #BC6C25;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+/* Media Queries Hompage */
+
+.card {
+	background-color: #fff;
+	width: 75vw;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: -535px;
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 1fr;
+	overflow: hidden;
+	border: none;
+	border-radius: 0;
+}
+
+.vl {
+  border-left: 6px solid #DDA15E;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -165px;
+  top: 20%;
+}
+
+#woodshaving {
+	display: none;
+}
+
+#ourwork {
+	margin-top: 150px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#cabinet img {
+	width: 200px;
+	margin-left: -5px;
+	margin-bottom: 25px;
+}
+
+#cabinettext {
+	margin-top: -298px;
+	margin-left: 213px;
+	width: 250px;
+}
+
+#furnituretext {
+	width: 250px;
+	text-align: right;
+	margin-top: px;
+}
+
+#furniture img {
+	width: 200px;
+	margin-left: 242px;
+	margin-top: -300px;
+}
+
+#featuretext {
+	margin-top: -275px;
+	margin-left: 213px;
+	width: 250px;
+}
+
+#featurewall img{
+	width: 200px;
+	margin-left: -5px; 
+	margin-top: 25px;
+}
+
+.numbers {
+	display: none;
+}
+
+#treering1 img {
+	margin-top: -1135px;
+	margin-left: -55px;
+	position: absolute;
+	z-index: -2;
+	width: 200px;
+}
+
+#treering2 img {
+	position: absolute;
+	margin-top: -735px;
+	margin-left: 60vw;
+	z-index: -2;
+	width: 175px;
+}
+
+.hl {
+  border-top: 6px solid #DDA15E;
+  width: 175px;
+  position: absolute;
+  z-index: 3;
+}
+
+#oneline {
+	margin-top: -745px;
+	margin-left: -12px;
+}
+
+#twoline {
+	margin-top: -395px;
+	margin-left: 300px;
+}
+
+#threeline {
+	margin-top: -75px;
+	margin-left: -12px;
+}
+
+#testimonial {
+	background-color: #283618;
+	height: 500px;
+	margin-top: 55px;
+}
+
+.slider li {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: -350px;
+  list-style: none;
+  margin-left: 40px;
+}
+
+.mask {
+  overflow: hidden;
+  height: 400px;
+}
+
+#quote p {
+	font-size: 11px;
+}
+
+.quotes {
+	display: none;
+}
+
+.slider .five img {
+	width: 100px;
+}
+
+/* Media Queries About Page */
+
+#woodworker {
+	display: none;
+}
+
+#who {
+	margin-top: 30px;
+}
+
+#stump img {
+	display: none;
+}
+
+#treering3 img {
+	position: absolute;
+	margin-top: -25px;
+	margin-left: 59.7vw;
+	z-index: -2;
+	width: 175px;
+	transform: scaleX(-1);
+}
+
+#materials {
+	margin-top: 35px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.gallery li {
+    width: 484px; 
+    height: 200px;
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.gallery li img {
+    width: 100%; 
+    height: auto;
+}
+
+.gallery h4 {
+	color: #fff;
+	font-size: 18px;
+	z-index: 2;
+	margin-top: -195px;
+	margin-left: -465px;
+}
+
+/* Media Queries Contact Page */
+
+#sketch {
+	display: none;
+}
+
+#footer1 {
+	margin-top: 125px;
+}
+
+#footer2 {
+	margin-top: -16px;
+}
+
+#footer3 {
+	margin-top: 85px;
+}
+
+#footerlogo {
+	text-align: center;
+	margin-left: -25px;
+}
+
+#footerlogo img {
+	display: inline-block;
+	width: 70px;
+	padding-bottom: 25px;
+}
+
+#map img {
+	display: none;
+}
+
+.footervl {
+  display: none;
+}
+
+#socials {
+	height: 50px;
+	width: 150px;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	margin-left: 110px;
+}
+
+#project {
+	margin-top: 25px;
+	text-align: center;
+}
+
+}
